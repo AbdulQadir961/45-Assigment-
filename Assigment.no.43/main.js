@@ -1,0 +1,27 @@
+function show_magicians(magicions) {
+    for (var _i = 0, magicions_1 = magicions; _i < magicions_1.length; _i++) {
+        var magicion_1 = magicions_1[_i];
+        console.log(magicion_1.charAt(0).toUpperCase() + magicion_1.slice(1));
+    }
+}
+var magicion = ["hassan", "ali", "baqar"];
+show_magicians(magicion);
+function make_great(magician) {
+    for (var q = 0; q < magician.length; q++) {
+        magician[q] = magician[q] + ' is the great';
+    }
+}
+var magician2 = ["amir", "saif", "raza"];
+make_great(magician2);
+show_magicians(magician2);
+function make_great2(magicions) {
+    var greatMagicions = [];
+    for (var a = 0; a < magicions.length; a++) {
+        greatMagicions.push(magicions[a] + ' the great');
+    }
+    return greatMagicions;
+}
+var magicians3 = ["ayan", "ahmed", "salman"];
+var greatMagician2 = make_great2(magicians3);
+show_magicians(magicians3);
+show_magicians(greatMagician2);
